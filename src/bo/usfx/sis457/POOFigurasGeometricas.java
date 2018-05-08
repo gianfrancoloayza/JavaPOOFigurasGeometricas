@@ -76,8 +76,55 @@ public class POOFigurasGeometricas {
                 System.out.println("El Area del Rectangulo es: " + rectangulo.getArea());
                 System.out.println("El Perimetro del Rectangulo es: " + rectangulo.getPerimetro());
                 break;
+            case 4:
+                limpiarConsola();
+                System.out.println("+==================================================+");
+                System.out.println("| SubPrograma: Triangulo                         |");
+                System.out.println("+==================================================+");
+                System.out.print("Introduzca el valor del lado1: ");
+                double lado1 = entradaTeclado.nextDouble();
+                System.out.print("Introduzca el valor del lado2: ");
+                double lado2 = entradaTeclado.nextDouble();
+                System.out.print("Introduzca el valor del lado3(base): ");
+                double lado3 = entradaTeclado.nextDouble();
+                Triangulo triangulo = new Triangulo(lado1, lado2, lado3);
+                System.out.println("El Area del Triangulo es: " + triangulo.getArea());
+                System.out.println("El Perimetro del Triangulo es: " + triangulo.getPerimetro());
+                break;
+            case 5:
+                limpiarConsola();
+                System.out.println("+==================================================+");
+                System.out.println("| SubPrograma: Trapecio                         |");
+                System.out.println("+==================================================+");
+                System.out.print("Introduzca el valor del parte1(paralelas): ");
+                double parte1 = entradaTeclado.nextDouble();
+                System.out.print("Introduzca el valor del parte2(parte superior): ");
+                double parte2 = entradaTeclado.nextDouble();
+                System.out.print("Introduzca el valor del parte3(base): ");
+                double parte3 = entradaTeclado.nextDouble();
+                System.out.print("Introduzca el valor del parte4(altura): ");
+                double parte4 = entradaTeclado.nextDouble();
+                Trapecio trapecio = new Trapecio(parte1, parte2, parte3, parte4);
+                System.out.println("El Area del Trapecio es: " + trapecio.getArea());
+                System.out.println("El Perimetro del Trapecio es: " + trapecio.getPerimetro());
+                break;
+                
+             case 6:
+                
+                Pentagono pentagono = new Pentagono();
+                limpiarConsola();
+                System.out.println("+==================================================+");
+                System.out.println("| SubPrograma: Pentagono                            |");
+                System.out.println("+==================================================+");
+                System.out.print("Introduzca el valor de la linea: ");
+                pentagono.setLinea1(entradaTeclado.nextDouble());
+                System.out.println("El Area del Pentagono es: " + pentagono.getArea());
+                System.out.println("El Perimetro del Pentagono es: " + pentagono.getPerimetro());
+                break;
+            
             default:
                 System.out.println("Salio del programa");
+                
         }
     }
     
